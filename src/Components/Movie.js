@@ -9,7 +9,7 @@ function Movie() {
     const movieparameters = movies[moviekey];
     return(
         <>
-            <NavigationBar currentlyActive="link"/>
+            <NavigationBar currentlyActive="filmovi"/>
             <div className="row p-5">
                 <div className="col-sm-5">
                     <img src={movieparameters.Poster} style={{width: "-webkit-fill-available"}} alt="Nema slike"/>

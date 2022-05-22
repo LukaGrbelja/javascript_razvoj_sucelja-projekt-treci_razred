@@ -14,11 +14,11 @@ function Movies() {
     });
     return(
         <>
-            <NavigationBar currentlyActive="home"/>
+            <NavigationBar currentlyActive="filmovi"/>
             <div className="row p-5">
                 {movies.map((movie) => {
                     return(
-                        <div className="col-sm-3" key={movie.Key}>
+                        <div className="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-5" key={movie.Key}>
                             <Link to={`/film/${movie.Key}`}>
                                 <div className="card" style={{width: "match-parent",background:"black"}}>
                                     <img src={movie.Poster} style={{height: "20rem"}} className="card-img-top" alt="Nema slike"/>

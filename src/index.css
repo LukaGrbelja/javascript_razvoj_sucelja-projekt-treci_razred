@@ -17,3 +17,7 @@ code {
 	color: white;
 	width: match-parent;
 }
+
+a {
+	text-decoration: none;
+}
