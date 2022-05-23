@@ -25,16 +25,9 @@ function NavigationBar({currentlyActive}) {
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link href="#" className="nav-link" to={"/novosti"}>
-                                <div id="novostDi">
-                                    Novosti
-                                </div>
-                            </Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link href="#" className="nav-link" to={"/novosti"}>
-                                <div id="novostDvi">
-                                    Novosti
+                            <Link href="#" className="nav-link" to={"/razgovor"}>
+                                <div id="chat">
+                                    Razgovor
                                 </div>
                             </Link>
                         </li>
