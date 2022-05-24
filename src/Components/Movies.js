@@ -28,7 +28,7 @@ function Movies() {
                                     <ul className="list-group list-group-flush">
                                         <li className="list-group-item" style={{background:"black",color: "white",width: "match-parent"}}>Zanr: {movie.Genre}</li>
                                         <li className="list-group-item" style={{background:"black",color: "white",width: "match-parent"}}>Glumci: {movie.Actors}</li>
-                                        <li className="list-group-item" style={{background:"black",color: "white",width: "match-parent"}}>IMDb ocjena: {movie.imdbRsating}</li>
+                                        <li className="list-group-item" style={{background:"black",color: "white",width: "match-parent"}}>IMDb ocjena: {movie.imdbRating}</li>
                                     </ul>
                                 </div>
                             </Link>

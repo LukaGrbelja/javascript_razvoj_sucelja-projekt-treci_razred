@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom";
+import { LogInContext } from "../../Context/LogInContext";
+import { useContext } from "react";
 
 function NavigationBar({currentlyActive}) {
     setTimeout(()=>{
         document.getElementById(currentlyActive).classList.add("active");
     },100);
+    const {user,logIn} = useContext(LogInContext);
+    console.log(user);
     return(
         <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
             <div className="container-fluid">
@@ -30,6 +34,16 @@ function NavigationBar({currentlyActive}) {
                                     Razgovor
                                 </div>
                             </Link>
+                        </li>
+                        <li className="nav-item">
+                            {
+                                user.username == null ?
+                                <Link to={"/prijava"}>
+                                    <button className="btn btn-outline-success" type="submit">Log in</button>
+                                </Link>
+                                :
+                                <button className="btn btn-outline-success" type="submit" onClick={()=>{logIn(null)}}>Log out</button>
+                            }
                         </li>
                     </ul>
                 </div>
