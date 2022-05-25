@@ -18,7 +18,7 @@ function LogInComponent() {
     return (
         <>
             <NavigationBar currentlyActive={"chat"}/>
-            <div className="row p-5">
+            <div className="row p-5 " style={{color:"white"}}>
                 <div className="col-12 text-center">
                     <form className="row g-3" onSubmit={handleSubmit}>
                         <label className="form-label">Unesi korisnicko ime</label>

@@ -11,8 +11,6 @@ function News() {
     news.forEach(element => {
         element.Key = index;
         index++;
-        element.comments = [];
-        element.votes = [];
     });
     return(
         <>
@@ -39,9 +37,9 @@ function News() {
                                     <h5 className="card-title">{article.Title}</h5>
                                     <p className="card-text">{article.Description}</p>
                                     <Link to={`/novosti/${article.Key}`}>
-                                        <button type="button" className="btn btn-primary mb-2">Large button</button>
+                                        <button type="button" className="btn btn-primary mb-2">Saznaj više</button>
                                     </Link><br/>
-                                    <a href={article.URL} className="btn btn-secondary">Pogledaj izvor</a>
+                                    <a href={article.URL} className="btn btn-secondary btn-outline-primary">Pogledaj izvor</a>
                                 </div>
                                 <div className="card-footer text-muted">
                                     {article.Date.getHours()}:{article.Date.getMinutes()} {article.Date.getDate()}/{article.Date.getMonth()}/{article.Date.getFullYear()}

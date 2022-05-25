@@ -11,8 +11,6 @@ function Movies() {
     movies.forEach(element => {
         element.Key = index;
         index++;
-        element.comments = [];
-        element.votes = [];
     });
     return(
         <>
@@ -38,7 +36,7 @@ function Movies() {
                                         <h5 className="card-title">{movie.Title}</h5>
                                     </div>
                                     <ul className="list-group list-group-flush">
-                                        <li className="list-group-item" style={{background:"black",color: "white",width: "match-parent"}}>Zanr: {movie.Genre}</li>
+                                        <li className="list-group-item" style={{background:"black",color: "white",width: "match-parent"}}>Žanr: {movie.Genre}</li>
                                         <li className="list-group-item" style={{background:"black",color: "white",width: "match-parent"}}>Glumci: {movie.Actors}</li>
                                         <li className="list-group-item" style={{background:"black",color: "white",width: "match-parent"}}>IMDb ocjena: {movie.imdbRating}</li>
                                     </ul>

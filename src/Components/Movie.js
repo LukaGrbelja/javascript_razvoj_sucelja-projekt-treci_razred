@@ -15,20 +15,20 @@ function Movie() {
                     <img src={movieparameters.Poster} style={{width: "-webkit-fill-available"}} alt="Nema slike"/>
                 </div>
                 <div className="col-sm-7">
-                    <p>
+                    <p style={{color:"white"}}>
                     Ime filma: {movieparameters.Title}<br/>
-                    Zanrovi: {movieparameters.Genre}<br/>
+                    Žanrovi: {movieparameters.Genre}<br/>
                     Glumci: {movieparameters.Actors}<br/>
                     Direktor: {movieparameters.Director}<br/>
                     Duljina filma: {movieparameters.Runtime}<br/>
                     Datum izlaska: {movieparameters.Released}<br/>
-                    Drzava: {movieparameters.Country}<br/>
+                    Država: {movieparameters.Country}<br/>
                     Jezik: {movieparameters.Language}<br/>
                     Zarada: {movieparameters.BoxOffice}<br/>
                     IMDb ocjena: {movieparameters.Ratings[0].Value}<br/>
                     Rotten Tomatoes ocjena: {movieparameters.Ratings[1].Value}<br/>
                     Metacritic ocjena: {movieparameters.Ratings[2].Value}<br/>
-    Plot: "Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth Vad"
+                    Opis: {movieparameters.Plot}
                     </p>
                 </div>
             </div>

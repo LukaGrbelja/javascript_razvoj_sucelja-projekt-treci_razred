@@ -7,20 +7,12 @@ class NewsContextProvider extends Component {
         news: 
         [
             {
-                Title: "Naslov vijesti",
-                URL: "https://www.index.hr",
-                Date: new Date(2022, 5, 17, 12, 24),
-                Description: "Lorem ipsum dolor sit amet.",
+                Title: "Otvara se hrvatska web-stranica za ocjenjivanje filmova.",
+                URL: "https://www.index.hr/vijest/hrvatska-web-stranica-za-filmove",
+                Date: new Date(2022, 4, 17, 12, 24),
+                Description: "Mladi programer iz Splita je počeo projekt u kojemu će se moći ocjenjivati i komentirati filmove. Projekt cilja hrvatsko društvo isključivo.",
                 User: "Admin",
-                FullText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            },
-            {
-                Title: "Naslov druge vijesti",
-                URL: "https://www.index.hr/sport",
-                Date: new Date(2022, 5, 22, 17, 59),
-                Description: "Vestibulum rhoncus est pellentesque elit.",
-                User: "Admin",
-                FullText: "Vestibulum rhoncus est pellentesque elit. Ut consequat semper viverra nam libero justo. Aliquet sagittis id consectetur purus ut faucibus pulvinar. Congue nisi vitae suscipit tellus mauris a diam. Urna nec tincidunt praesent semper feugiat nibh sed. Egestas sed tempus urna et pharetra pharetra. Lacus vestibulum sed arcu non. Tincidunt praesent semper feugiat nibh. Ultrices in iaculis nunc sed augue lacus viverra vitae. Ut tellus elementum sagittis vitae et. Turpis egestas integer eget aliquet. Nunc faucibus a pellentesque sit amet porttitor eget. Lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare. Arcu felis bibendum ut tristique. Consequat semper viverra nam libero justo laoreet sit amet cursus."
+                FullText: "Mladi programer iz Splita je počeo projekt u kojemu će se moći ocjenjivati i komentirati filmove. Projekt cilja hrvatsko društvo isključivo. Nažalost, iz dobro provjerenih izvora saznajemo da projekt neće biti potpuno završen zbog malo vremena i lošeg raspoređivanja istog."
             }
         ]
     };

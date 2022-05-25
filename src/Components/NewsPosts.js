@@ -14,7 +14,7 @@ function PostArticles() {
         Date: new Date(Date.now()),
         Description: "",
         User: user.username,
-        FullText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        FullText: ""
     });
 
     const handleSubmit = (e) => {
@@ -27,7 +27,7 @@ function PostArticles() {
             <NavigationBar currentlyActive="filmovi"/>
             <div className="row p-5">
                 <div className="col-3"/>
-                <div className="col-6">
+                <div className="col-6" style={{color:"white"}}>
                     <form onSubmit={handleSubmit}>
                         <div className="mb-3">
                             <label className="form-label">Naslov clanka</label>
@@ -43,7 +43,7 @@ function PostArticles() {
                         </div>
                         <div className="mb-3">
                             <label className="form-label">Puni tekst</label>
-                            <textarea required type="text" className="form-control" onChange={(e)=>{setArticle({...article,Director: e.target.value})}}/>
+                            <textarea required type="text" className="form-control" onChange={(e)=>{setArticle({...article,FullText: e.target.value})}}/>
                         </div>
                         <button type="submit" className="btn btn-primary">Submit</button>
                     </form>

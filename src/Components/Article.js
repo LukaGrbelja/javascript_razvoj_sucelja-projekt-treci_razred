@@ -10,7 +10,7 @@ function Article() {
     return(
         <>
             <NavigationBar currentlyActive="filmovi"/>
-            <div className="row p-5">
+            <div className="row p-5" style={{color:"white"}}>
                 <div className="col-sm-12 mb-5">
                     <h1>{newsparameters.Title}</h1>
                     <span>{newsparameters.User}</span>

@@ -6,11 +6,11 @@ import Article from "./Components/Article";
 import LogInComponent from "./Components/LogInComponent";
 import CommunityChat from "./Components/CommunityChat";
 import PostMovies from "./Components/PostMovies";
+import PostArticles from "./Components/NewsPosts";
 import MoviesContextProvider from "./Context/MoviesContext";
 import NewsContextProvider from "./Context/NewsContext";
 import ChatContextProvider from "./Context/ChatContext";
 import LogInContextProvider from "./Context/LogInContext";
-import PostArticles from "./Components/NewsPosts";
 
 function App() {
 	return (

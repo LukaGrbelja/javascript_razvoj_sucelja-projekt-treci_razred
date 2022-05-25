@@ -38,10 +38,10 @@ function NavigationBar({currentlyActive}) {
                             {
                                 user.username == null ?
                                 <Link to={"/prijava"}>
-                                    <button className="btn btn-outline-success" type="submit">Log in</button>
+                                    <button className="btn btn-outline-primary" type="submit">Ulogiraj se</button>
                                 </Link>
                                 :
-                                <button className="btn btn-outline-success" type="submit" onClick={()=>{logIn(null)}}>Log out</button>
+                                <button className="btn btn-outline-primary" type="submit" onClick={()=>{logIn(null)}}>Izlogiraj se</button>
                             }
                         </li>
                     </ul>

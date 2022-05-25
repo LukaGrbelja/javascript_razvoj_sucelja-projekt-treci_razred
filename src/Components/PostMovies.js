@@ -32,7 +32,7 @@ function PostMovies() {
             <NavigationBar currentlyActive="filmovi"/>
             <div className="row p-5">
                 <div className="col-3"/>
-                <div className="col-6">
+                <div className="col-6" style={{color:"white"}}>
                     <form onSubmit={handleSubmit}>
                         <div className="mb-3">
                             <label className="form-label">Ime filma</label>

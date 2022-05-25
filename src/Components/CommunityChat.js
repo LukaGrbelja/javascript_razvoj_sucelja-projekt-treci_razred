@@ -34,8 +34,8 @@ function CommunityChat() {
                 <div className="col-12">
                     <div className="container container-fluid">
                         <div className="row p-5 mb-4 rounded-3 bg-secondary">
-                            <div className="col-3"/>
-                            <div className="col-6">
+                            <div className="col-sm-0 col-md-3"/>
+                            <div className="col-sm-12 col-md-6">
                                 <form onSubmit={handleSubmit}>
                                     <div className="mb-3">
                                         <label className="form-label">Upisi tekst</label>
