@@ -1,10 +1,12 @@
 import { MoviesContext } from "../Context/MoviesContext";
+import { LogInContext } from "../Context/LogInContext";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import NavigationBar from "./ViewComponents/NavigationBar";
 
 function Movies() {
     const {movies} = useContext(MoviesContext);
+    const {user} = useContext(LogInContext);
     let index = 0;
     movies.forEach(element => {
         element.Key = index;
@@ -16,6 +18,16 @@ function Movies() {
         <>
             <NavigationBar currentlyActive="filmovi"/>
             <div className="row p-5">
+                <div className="col-12 text-center mb-4">
+                    {
+                        user.username == null ? 
+                        <button type="submit" className="btn btn-primary" onClick={()=>{window.alert("Prijavite se da bi mogli dodavati filmove")}}>Dodaj film</button>
+                        :
+                        <Link to={"/film/dodaj"}>
+                            <button type="submit" className="btn btn-primary">Dodaj film</button>
+                        </Link>
+                    }
+                </div>
                 {movies.map((movie) => {
                     return(
                         <div className="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-5" key={movie.Key}>

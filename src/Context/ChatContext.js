@@ -9,13 +9,16 @@ class ChatContextProvider extends Component {
             {
                 Text: "Molimo budite pristojni u chatu!",
                 User: "Admin",
-                Date: new Date(2022, 5, 17, 12, 24)
+                Date: new Date(2022, 4, 17, 12, 24)
             }
         ]
     };
+    addPosts = (obj) => {
+        this.setState({posts:[...this.state.posts,obj]});
+    }
     render() {
         return(
-            <ChatContext.Provider value={{...this.state}}>
+            <ChatContext.Provider value={{...this.state,addPost: this.addPosts}}>
                 {this.props.children}
             </ChatContext.Provider>
         );

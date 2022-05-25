@@ -7,7 +7,6 @@ function NavigationBar({currentlyActive}) {
         document.getElementById(currentlyActive).classList.add("active");
     },100);
     const {user,logIn} = useContext(LogInContext);
-    console.log(user);
     return(
         <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
             <div className="container-fluid">

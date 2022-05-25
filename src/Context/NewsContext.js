@@ -24,9 +24,12 @@ class NewsContextProvider extends Component {
             }
         ]
     };
+    addArticle = (article) => {
+        this.setState({...this.state,news: [...this.state.news,article]});
+    }
     render() {
         return(
-            <NewsContext.Provider value={{...this.state}}>
+            <NewsContext.Provider value={{...this.state,addArticle:this.addArticle}}>
                 {this.props.children}
             </NewsContext.Provider>
         );

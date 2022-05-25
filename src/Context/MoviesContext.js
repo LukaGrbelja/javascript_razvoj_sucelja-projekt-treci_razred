@@ -16,7 +16,6 @@ class MoviesContextProvider extends Component {
                 BoxOffice: "$389,813,101",
                 Released: "05 May 2017",
                 Runtime: "136 min",
-                Year: "2017",
                 imdbRating: "7.6",
                 Ratings: [
                     {Source: "Internet Movie Database",Value: "7.6/10"},
@@ -35,7 +34,6 @@ class MoviesContextProvider extends Component {
                 BoxOffice: "$460,998,507",
                 Released: "25 May 1977",
                 Runtime: "121 min",
-                Year: "1977",
                 imdbRating: "8.6",
                 Ratings: [
                     {Source: "Internet Movie Database",Value: "8.6/10"},
@@ -46,9 +44,12 @@ class MoviesContextProvider extends Component {
             }
         ]
     };
+    addMovie = (movie) => {
+        this.setState({movies: [...this.state.movies,movie]});
+    }
     render() {
         return(
-            <MoviesContext.Provider value={{...this.state}}>
+            <MoviesContext.Provider value={{...this.state,addMovie: this.addMovie}}>
                 {this.props.children}
             </MoviesContext.Provider>
         );
